@@ -1,0 +1,228 @@
+---
+import GitHub from "@/icons/GitHub.astro";
+import Section from "../Section.astro";
+
+import { projects } from "@cv";
+---
+
+<Section title="Proyectos">
+  <ul class="no-print">
+    {
+      projects.map(
+        ({ url, description, highlights, name, isActive, github }) => {
+          return (
+            <li>
+              <article>
+                <header>
+                  <h3>
+                    <a
+                      href={url}
+                      target="_blank"
+                      title={url ? `Ver el proyecto ${name}` : name}
+                      class={url && "link"}
+                    >
+                      {name}
+                    </a>
+                    {isActive && <span>•</span>}
+                    {github && (
+                      <a
+                        class="github-code-link"
+                        href={github}
+                        target="_blank"
+                        title={`Ver código fuente del proyecto ${name}`}
+                      >
+                        <GitHub
+                          title={`Ver código fuente del proyecto ${name}`}
+                        />
+                      </a>
+                    )}
+                  </h3>
+                  <p>{description}</p>
+                </header>
+                {highlights && (
+                  <footer>
+                    {highlights.map((highlight) => {
+                      return <span>{highlight}</span>;
+                    })}
+                  </footer>
+                )}
+              </article>
+            </li>
+          );
+        },
+      )
+    }
+  </ul>
+
+  <ul class="print">
+    {
+      projects.map(
+        ({ url, description, highlights, name, isActive, github }) => (
+          <article>
+            <header>
+              <h3>
+                <a href={url}>{name}</a>
+                {github && (
+                  <a
+                    class="github-code-link"
+                    href={github}
+                    target="_blank"
+                    title={`Ver código fuente del proyecto ${name}`}
+                  >
+                    <GitHub />
+                  </a>
+                )}
+              </h3>
+              <p>{description}</p>
+            </header>
+            <div>
+              {isActive && <span>activo</span>}
+              {highlights && (
+                <footer>
+                  <p>{highlights.join(", ")}</p>
+                </footer>
+              )}
+            </div>
+          </article>
+        ),
+      )
+    }
+  </ul>
+</Section>
+
+<style>
+  .no-print {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-inline: -16px;
+  }
+
+  .no-print header p {
+    color: #666;
+  }
+
+  .no-print article {
+    border-radius: 8px;
+    border: 1px solid #444;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    height: 100%;
+  }
+
+  .no-print article header {
+    flex: 1;
+  }
+
+  .no-print article h3 {
+    margin-bottom: 4px;
+  }
+
+  .no-print .link:hover {
+    text-decoration: underline;
+  }
+
+  .no-print article p {
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  .no-print article h3 span {
+    font-size: x-large;
+    color: rgb(0, 188, 47);
+    animation-name: flicker;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }
+
+  .no-print footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.6rem;
+    gap: 4px;
+  }
+
+  .no-print footer span {
+    border-radius: 6px;
+    background: #303030;
+    color: #d9d9d9;
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .github-code-link {
+    margin-left: 5px;
+    padding: 5px;
+  }
+
+  .no-print .github-code-link:hover {
+    border-radius: 25%;
+    background-color: #303030;
+  }
+
+  .print {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .print article {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+  }
+
+  .print header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 75%;
+  }
+
+  .print header p {
+    text-wrap: pretty;
+  }
+
+  .print div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: end;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .print div p {
+    text-wrap: pretty;
+  }
+
+  .print div span {
+    color: rgb(0, 146, 36);
+  }
+
+  @keyframes flicker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.25;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media (width <= 700px) {
+    ul {
+      margin-inline: 0px;
+    }
+  }
+</style>

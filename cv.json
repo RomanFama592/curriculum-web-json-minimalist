@@ -1,0 +1,273 @@
+{
+  "basics": {
+    "name": "Famá Jorge Román",
+    "label": "Soy Román un programador autodiracta y en busca de mi primer experiencia laboral para enfrentarme a nuevos retos.",
+    "image": "https://media.licdn.com/dms/image/C4D03AQG8rFHubgi5Ug/profile-displayphoto-shrink_800_800/0/1656642134009?e=1713398400&v=beta&t=YIgkVT0HyLLDS2-gXAgaNmE_zJL1XUEDsJSvBxcktPo",
+    "email": "famaroman@gmail.com",
+    "phone": "+54 0 11 64582166",
+    "url": "",
+    "summary": "+2 años de aprendizaje como Desarrollador Web y Backend. Actualmente estoy colaborando en diversos proyectos Open Source en GitHub.",
+    "location": {
+      "city": "Tigre Buenos Aires",
+      "countryCode": "AR",
+      "region": "Argentina"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "romanfama",
+        "url": "https://linkedin.com/in/romanfama"
+      },
+      {
+        "network": "GitHub",
+        "username": "RomanFama592",
+        "url": "https://github.com/RomanFama592"
+      }
+    ]
+  },
+  "work": [],
+  "education": [
+    {
+      "institution": "Secundaria Don Orione",
+      "area": "Economia",
+      "startDate": "2014-03",
+      "endDate": "2020-10"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "",
+      "keywords": [
+        "Backend",
+        "JavaScript",
+        "Servidor"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": [
+        "Backend",
+        "Scripting",
+        "Desktop"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": [
+        "Bases de Datos",
+        "MongoDB",
+        "Almacenamiento de Datos"
+      ]
+    },
+    {
+      "name": "Redis",
+      "level": "",
+      "keywords": [
+        "Bases de Datos",
+        "Redis",
+        "Cache"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git",
+        "Open Source"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "",
+      "keywords": [
+        "Contenedores",
+        "Dev Containers",
+        "Despliegue",
+        "Microservicios",
+        "Dockerfile",
+        "Docker Compose",
+        "Automatización"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Intermediate"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Tic Tac Toe World",
+      "isActive": true,
+      "description": "Una variante del clásico juego Tic Tac Toe con un enfoque en la personalización de partidas y una variedad de modos de juego. Abierto a colaboraciones.",
+      "highlights": [
+        "Astro",
+        "Typescript",
+        "React",
+        "Tailwind",
+        "SEO Performance"
+      ],
+      "url": "https://t3-world.vercel.app/",
+      "github": "https://github.com/RomanFama592/tic-tac-toe-world"
+    },
+    {
+      "name": "Shortilin",
+      "isActive": true,
+      "description": "Un acortador de enlaces temporales que utiliza una base de datos Redis. Proporciona información sobre la URL de destino y ofrece una vista previa mediante SSR.",
+      "highlights": [
+        "Astro",
+        "Vanilla JS",
+        "CSS",
+        "Backend",
+        "Redis"
+      ],
+      "url": "https://shtilin.vercel.app/",
+      "github": "https://github.com/RomanFama592/shortilin-client-web"
+    },
+    {
+      "name": "YT Tools Extension",
+      "isActive": false,
+      "description": "Una extensión de Chrome que proporciona herramientas útiles para mejorar la experiencia en YouTube. Actualmente esta deprecada la funcion de saltar publicidades y solo funciona el dar like automanticamente despues de un tiempo.",
+      "highlights": [
+        "Typescript",
+        "React",
+        "ViteJS",
+        "Youtube Tools"
+      ],
+      "url": "https://chromewebstore.google.com/detail/youtube-tools/oaojlpamigpmodndhjbnbpbdfhegdfef",
+      "github": "https://github.com/RomanFama592/yt-tools-extension"
+    },
+    {
+      "name": "Folder Mapping GHA",
+      "isActive": false,
+      "description": "Una acción personalizable de GitHub que muestra un árbol de archivos en tus README desde tu repositorio o una carpeta específica.",
+      "highlights": [
+        "Python",
+        "GitHub Action"
+      ],
+      "url": "https://github.com/marketplace/actions/folder_mapping",
+      "github": "https://github.com/RomanFama592/folder_mapping_action"
+    },
+    {
+      "name": "Prueba Técnica Automatización Contable",
+      "isActive": false,
+      "description": "Prueba técnica para un estudio contable real que buscaba automatizar tareas con Python. Proyecto bien documentado realizado en menos de 24 horas.",
+      "highlights": [
+        "Python",
+        "Google Auth",
+        "Google Api",
+        "Gspread",
+        "Buena Documentación"
+      ],
+      "github": "https://github.com/RomanFama592/TT_estudio_contable_automatizacion"
+    },
+    {
+      "name": "Email Read Confirmation Service",
+      "isActive": false,
+      "description": "Un servicio para confirmar la lectura de emails mediante una imagen incrustada. Simple y eficiente.",
+      "highlights": [
+        "NodeJS",
+        "ExpressJS",
+        "Axios"
+      ],
+      "github": "https://github.com/RomanFama592/email-confirmation-nodejs"
+    },
+    {
+      "name": "JWT Service ETU",
+      "isActive": false,
+      "description": "Un servicio 'Easy To Use' para tokens JWT. Configuración simple a través de .env y listo para usar. Protege la integridad de tus datos sin complicaciones.",
+      "highlights": [
+        "NodeJS",
+        "ExpressJS",
+        "Json Web Token"
+      ],
+      "github": "https://github.com/RomanFama592/service-jwt-nodejs"
+    }
+  ]
+}

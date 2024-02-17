@@ -1,0 +1,26 @@
+---
+import { basics } from "@cv";
+
+const { url } = basics;
+---
+
+<footer class="no-print">
+    <span>Curriculum <b>basado</b> en el proyecto de <a href="https://github.com/midudev/minimalist-portfolio-json" target="_blank" rel="noopener noreferrer">Midudev</a></span>
+</footer>
+<footer class="print">
+    <span>
+        Este curriculum fue generado a partir de mi pagina: <a href={url}>{url}</a>
+    </span>
+</footer>
+
+<style>
+    footer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer a {
+        color: #51b0d5
+    }
+</style>

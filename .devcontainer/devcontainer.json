@@ -1,0 +1,21 @@
+{
+	"name": "portafolio-minimal",
+	"dockerFile": "./Dockerfile",
+	"context": "..",
+	"appPort": "8082:8082",
+	"postCreateCommand": "bun install -D",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"ms-azuretools.vscode-docker",
+				"oven.bun-vscode",
+				"bradlc.vscode-tailwindcss",
+				"mintlify.document",
+				"astro-build.astro-vscode",
+				"usernamehw.errorlens",
+				"Gruntfuggly.todo-tree"
+			]
+		}
+	}
+}

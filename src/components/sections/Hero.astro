@@ -1,0 +1,220 @@
+---
+import { basics } from "@cv";
+import Section from "@/components/Section.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import X from "@/icons/X.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import GitHub from "@/icons/GitHub.astro";
+import WorldMap from "@/icons/WorldMap.astro";
+import type { SocialIcon } from "@/types";
+
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
+
+const SOCIAL_ICONS: SocialIcon = {
+  GitHub,
+  LinkedIn,
+  X,
+};
+
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
+const linkedUrl = linkedInfo?.url;
+
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
+---
+
+<Section>
+  <div class="container">
+    <div class="info">
+      <h1>{name}</h1>
+      <h2>{label}</h2>
+      <span>
+        <WorldMap />
+        {city}, {region}
+      </span>
+      <footer class="print">
+        {printInfo}
+      </footer>
+      <footer class="no-print">
+        {
+          email && (
+            <a
+              href={`mailto:${email}`}
+              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail
+                title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+              />
+            </a>
+          )
+        }
+        {
+          phone && (
+            <a
+              href={`tel:${phone}`}
+              title={`Llamar por teléfono a ${name} al número ${phone}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Phone
+                title={`Llamar por teléfono a ${name} al número ${phone}`}
+              />
+            </a>
+          )
+        }
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network];
+
+            return (
+              <a
+                href={url}
+                title={`Visitar el perfil de ${name} en ${network}${username && " o búscalo como " + username}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon
+                  title={`Visitar el perfil de ${name} en ${network}${username && " o búscalo como " + username}`}
+                />
+              </a>
+            );
+          })
+        }
+      </footer>
+    </div>
+    <figure>
+      <img id="img" src={image} alt={name} />
+    </figure>
+  </div>
+</Section>
+
+<script defer>
+  function randomNumber(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+
+  const img = document.getElementById("img");
+
+  const dropShadowIntervalBuilder = () =>
+    setInterval(() => {
+      const drop = `drop-shadow(${Math.floor(randomNumber(-10, 10))}px ${Math.floor(randomNumber(-10, 10))}px ${randomNumber(0.5, 1.75)}rem rgb(76, 76, 76))`;
+      img.style.filter = drop;
+    }, 750);
+
+  let intervalDrop = dropShadowIntervalBuilder();
+
+  window.addEventListener("beforeprint", (event) => {
+    clearInterval(intervalDrop);
+    img.style.filter = "none";
+  });
+
+  window.addEventListener("afterprint", (event) => {
+    intervalDrop = dropShadowIntervalBuilder();
+  });
+</script>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-right: 32px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    color: #c6c6c6;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-wrap: balance;
+  }
+
+  span {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    letter-spacing: -0.05rem;
+  }
+
+  footer {
+    color: #555;
+    font-size: 0.65rem;
+    display: flex;
+    gap: 4px;
+    margin-top: 12px;
+  }
+
+  footer a {
+    color: #777;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #444;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  footer a:hover {
+    background: #eee;
+    border: 1px solid #ddd;
+  }
+
+  #img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 256px;
+    transform: scaleX(-100%);
+    border-radius: 50%;
+    transition: all;
+    transition-duration: 600ms;
+    transition-timing-function: ease-in-out;
+    transition-property: filter;
+  }
+
+  @media (width <= 700px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+
+    .info {
+      justify-content: center;
+      align-items: center;
+      padding-right: 0;
+      text-align: center;
+    }
+
+    #img {
+      width: 128px;
+    }
+
+    figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-wrap: balance;
+    }
+  }
+</style>
