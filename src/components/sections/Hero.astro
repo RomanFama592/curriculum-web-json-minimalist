@@ -45,9 +45,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Mail
-                title={`Enviar un correo electrónico a ${name} al correo ${email}`}
-              />
+              <Mail />
             </a>
           )
         }
@@ -59,9 +57,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Phone
-                title={`Llamar por teléfono a ${name} al número ${phone}`}
-              />
+              <Phone />
             </a>
           )
         }
@@ -76,9 +72,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Icon
-                  title={`Visitar el perfil de ${name} en ${network}${username && " o búscalo como " + username}`}
-                />
+                <Icon />
               </a>
             );
           })
