@@ -1,9 +1,11 @@
 
 
 <div align="center">
+
 <h2>
     <em>Résumé</em> minimalista maquetado para web y pdf
 </h2>
+
 <p>
 Esquema del JSON de CV de <a href="https://jsonresume.org/schema/">jsonresume.org</a>
 </p>
@@ -11,37 +13,31 @@ Esquema del JSON de CV de <a href="https://jsonresume.org/schema/">jsonresume.or
 
 <p>
 Basado en el diseño de <a href="https://github.com/midudev/minimalist-portfolio-json">Midudev</a>
-
 </p>
 
+<a href="#🚀-empezar">
+    Empezar
+</a>
+<span>&nbsp;✦&nbsp;</span>
+<a href="#🧞-comandos">
+    Comandos
+</a>
+<span>&nbsp;✦&nbsp;</span>
+<a href="#🔑-licencia">
+    Licencia
+</a>
+<span>&nbsp;✦&nbsp;</span>
+<a href="https://midu.dev">
+    Personal
+</a> 
+
 </div>
+
+<br>
 
 <div align="center">
-    <a href="#🚀-empezar">
-        Empezar
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🧞-comandos">
-        Comandos
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🔑-licencia">
-        Licencia
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
-        Personal
-    </a>
-   
+    <img src="docs/portada.webp" style="height: 300px;" />
 </div>
-
-<p></p>
-
-<div align="center">
-
-</div>
-
-<img src="docs/portada1.webp"></img>
 
 ## 🛠️ Stack
 
