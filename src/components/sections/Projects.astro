@@ -15,6 +15,7 @@ import { projects } from "@cv";
               <article>
                 <header>
                   <h3>
+                    {isActive && <span>•</span>}
                     <a
                       href={url}
                       target="_blank"
@@ -23,7 +24,6 @@ import { projects } from "@cv";
                     >
                       {name}
                     </a>
-                    {isActive && <span>•</span>}
                     {github && (
                       <a
                         class="github-code-link"
@@ -99,7 +99,7 @@ import { projects } from "@cv";
   }
 
   .no-print header p {
-    color: #666;
+    color: #aaaaaa;
   }
 
   .no-print article {
@@ -117,7 +117,9 @@ import { projects } from "@cv";
   }
 
   .no-print article h3 {
-    margin-bottom: 4px;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem
   }
 
   .no-print .link:hover {
@@ -132,6 +134,7 @@ import { projects } from "@cv";
 
   .no-print article h3 span {
     font-size: x-large;
+    line-height: 1rem;
     color: rgb(0, 188, 47);
     animation-name: flicker;
     animation-duration: 3s;

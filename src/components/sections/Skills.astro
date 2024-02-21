@@ -64,11 +64,10 @@ const SKILLS_ICONS: Record<string, any> = {
 
 <style>
   ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-inline: -16px;
   }
 
   li {
@@ -78,6 +77,8 @@ const SKILLS_ICONS: Record<string, any> = {
     font-weight: 500;
     gap: 4px;
     padding: 0.2rem 0.6rem;
+    justify-content: center;
+    align-items: flex-start;
     border: 1px solid #444;
   }
 
@@ -93,6 +94,7 @@ const SKILLS_ICONS: Record<string, any> = {
     align-items: center;
     justify-content: start;
     padding: 5px;
+    gap: 10px;
   }
 
   .wrapper_name{
