@@ -242,8 +242,7 @@
         "Python",
         "Google Auth",
         "Google Api",
-        "Gspread",
-        "Buena Documentación"
+        "Gspread"
       ],
       "github": "https://github.com/RomanFama592/TT_estudio_contable_automatizacion"
     },
@@ -253,8 +252,7 @@
       "description": "Un servicio para confirmar la lectura de emails mediante una imagen incrustada. Simple y eficiente.",
       "highlights": [
         "NodeJS",
-        "ExpressJS",
-        "Axios"
+        "ExpressJS"
       ],
       "github": "https://github.com/RomanFama592/email-confirmation-nodejs"
     },
