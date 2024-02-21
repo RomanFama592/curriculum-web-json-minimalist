@@ -2,7 +2,7 @@
   "basics": {
     "name": "Famá Jorge Román",
     "label": "Soy Román un programador autodidacta y en busca de mi primer experiencia laboral para enfrentarme a nuevos retos.",
-    "image": "https://media.licdn.com/dms/image/C4D03AQG8rFHubgi5Ug/profile-displayphoto-shrink_800_800/0/1656642134009?e=1713398400&v=beta&t=YIgkVT0HyLLDS2-gXAgaNmE_zJL1XUEDsJSvBxcktPo",
+    "image": "me.webp",
     "email": "famaroman@gmail.com",
     "phone": "+54 0 11 64582166",
     "url": "https://famaroman.vercel.app/",
@@ -26,14 +26,7 @@
     ]
   },
   "work": [],
-  "education": [
-    {
-      "institution": "Secundaria Don Orione",
-      "area": "Economia",
-      "startDate": "2014-03",
-      "endDate": "2020-10"
-    }
-  ],
+  "education": [],
   "skills": [
     {
       "name": "HTML",
