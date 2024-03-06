@@ -46,6 +46,14 @@
       ]
     },
     {
+      "name": "Java",
+      "level": "",
+      "keywords": [
+        "Frontend",
+        "Backend"
+      ]
+    },
+    {
       "name": "JavaScript",
       "level": "",
       "keywords": [
@@ -144,6 +152,15 @@
       ]
     },
     {
+      "name": "Swing",
+      "level": "",
+      "keywords": [
+        "Frontend",
+        "Java Library",
+        "UI"
+      ]
+    },
+    {
       "name": "React",
       "level": "",
       "keywords": [
@@ -188,6 +205,17 @@
       ],
       "url": "https://t3-world.vercel.app/",
       "github": "https://github.com/RomanFama592/tic-tac-toe-world"
+    },
+    {
+      "name": "MySeries Local App",
+      "isActive": true,
+      "description": "Una aplicación de escritorio desarrollada en Java con interfaz gráfica Swing y utilizando SQLite como base de datos local. Permite gestionar una lista de series, almacenando título, enlace, temporada, capítulo y estado de visualización (visto, pendiente o finalizada). Incluye la funcionalidad de abrir en el navegador la serie seleccionada en el capítulo y temporada guardados, así como la capacidad de verificar si un nuevo episodio está disponible para ver mediante la consulta del enlace y la lectura del encabezado HTTP, útil para seguir series en emisión.",
+      "highlights": [
+        "Java",
+        "Swing",
+        "SQLite"
+      ],
+      "github": "https://github.com/RomanFama592/my-series-local-app"
     },
     {
       "name": "Shortilin",
