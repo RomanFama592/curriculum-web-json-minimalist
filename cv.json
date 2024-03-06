@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Famá Jorge Román",
-    "label": "Soy Román un programador autodidacta y en busca de mi primer experiencia laboral para enfrentarme a nuevos retos.",
+    "label": "Soy Román un programador autodidacta.",
     "image": "me.webp",
     "email": "famaroman@gmail.com",
     "phone": "+54 0 11 64582166",
@@ -243,6 +243,15 @@
       ],
       "url": "https://chromewebstore.google.com/detail/youtube-tools/oaojlpamigpmodndhjbnbpbdfhegdfef",
       "github": "https://github.com/RomanFama592/yt-tools-extension"
+    },
+    {
+      "name": "Colaboracion en un projecto de Midudev",
+      "isActive": false,
+      "description": "He integrado la animacion al punto que muestra los proyectos activos.",
+      "highlights": [
+        "CSS"
+      ],
+      "github": "https://github.com/midudev/minimalist-portfolio-json"
     },
     {
       "name": "Folder Mapping GHA",
