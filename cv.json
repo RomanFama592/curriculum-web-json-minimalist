@@ -6,9 +6,9 @@
     "email": "famaroman@gmail.com",
     "phone": "+54 0 11 64582166",
     "url": "https://famaroman.vercel.app/",
-    "summary": "+2 años de aprendizaje como Desarrollador Web y Backend. Actualmente estoy colaborando en diversos proyectos Open Source en GitHub.",
+    "summary": "+2 años de aprendizaje como Desarrollador Web y Backend. Actualmente estoy trabajando en Gruas San Blas como programador Java.",
     "location": {
-      "city": "Tigre Buenos Aires",
+      "city": "El Talar, Buenos Aires",
       "countryCode": "AR",
       "region": "Argentina"
     },
@@ -25,7 +25,16 @@
       }
     ]
   },
-  "work": [],
+  "work": [
+{
+"name": "Gruas San Blas",
+"position": "Programador Java",
+"url": "https://www.linkedin.com/company/gruassanblas/",
+"startDate": "2024-04-22",
+"summary":"",
+"highlights":[]
+}
+],
   "education": [],
   "skills": [
     {
